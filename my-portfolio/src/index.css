@@ -260,3 +260,40 @@ p {
 .social-accounts-footer { margin-top: 30px; display: flex; flex-direction: column; gap: 15px; align-items: center; }
 .social-row { display: flex; align-items: center; gap: 15px; text-decoration: none; color: white; }
 .social-row img { width: 30px; height: 30px; }
+
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-areas: 
+      "portfolio"
+      "skills"
+      "achievements";
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .portfolio-nav {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-group {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .hobby-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .glass-card {
+    padding: 20px;
+  }
+
+  .portfolio-nav {
+    padding: 15px;
+  }
+}
